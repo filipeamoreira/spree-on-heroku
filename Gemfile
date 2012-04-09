@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 gem 'spree', '~> 1.0.3'
+gem 'unicorn'
+gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
+gem 'heroku'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -38,4 +41,8 @@ gem 'spree', '~> 1.0.3'
 group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
+end
+
+group :development do
+  gem 'foreman'
 end
